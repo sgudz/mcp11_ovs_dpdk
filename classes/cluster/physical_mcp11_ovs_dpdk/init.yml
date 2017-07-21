@@ -14,7 +14,7 @@ classes:
 parameters:
   _param:
     openstack_version: mitaka
-    apt_mk_version: nightly
+    apt_mk_version: testing
     cluster_domain: mcp11-ovs-dpdk.local
     #stacklight_environment: ${_param:cluster_domain}
     reclass_data_revision: master
