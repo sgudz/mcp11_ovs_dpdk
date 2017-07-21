@@ -1,7 +1,8 @@
 classes:
 - system.linux.system.repo.mcp.openstack
 - system.linux.system.repo.mcp.extra
-- system.linux.system.repo.saltstack.trusty
+#- system.linux.system.repo.saltstack.trusty
+- system.linux.system.repo.saltstack.xenial
 - system.linux.system.repo.ubuntu
 - system.nginx.server.single
 - system.nginx.server.proxy.openstack_api
