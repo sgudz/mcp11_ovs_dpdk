@@ -13,7 +13,7 @@ classes:
 #- cluster.physical_mcp11_ovs_dpdk.stacklight.client
 parameters:
   _param:
-    openstack_version: mitaka
+    openstack_version: ocata
     apt_mk_version: testing
     cluster_domain: mcp11-ovs-dpdk.local
     #stacklight_environment: ${_param:cluster_domain}
