@@ -93,7 +93,12 @@ parameters:
             prx02:
               image: ${_param:salt_control_xenial_image}
               provider: kvm02.${_param:cluster_domain}
-
+            msg01:
+              image: ${_param:salt_control_xenial_image}
+            msg02:
+              image: ${_param:salt_control_xenial_image}
+            msg03:
+              image: ${_param:salt_control_xenial_image}
   virt:
     nic:
       default:
