@@ -75,14 +75,24 @@ parameters:
       cluster:
         internal:
           node:
-            prx02:
-              provider: kvm02.${_param:cluster_domain}
             mdb01:
               image: ${_param:salt_control_xenial_image}
             mdb02:
               image: ${_param:salt_control_xenial_image}
             mdb03:
               image: ${_param:salt_control_xenial_image}
+            ctl01:
+              image: ${_param:salt_control_xenial_image}
+            ctl02:
+              image: ${_param:salt_control_xenial_image}
+            ctl03:
+              image: ${_param:salt_control_xenial_image}
+            prx01:
+              image: ${_param:salt_control_xenial_image}
+              provider: kvm01.${_param:cluster_domain}
+            prx02:
+              image: ${_param:salt_control_xenial_image}
+              provider: kvm02.${_param:cluster_domain}
 
   virt:
     nic:
