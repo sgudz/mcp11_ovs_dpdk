@@ -64,9 +64,17 @@ parameters:
           params:
             linux_system_codename: xenial
             keepalived_vip_priority: 102
+        openstack_proxy_node01:
+          params:
+            linux_system_codename: xenial
+        openstack_proxy_node02:
+          params:
+            linux_system_codename: xenial
         openstack_control_node01:
           classes:
           - cluster.${_param:cluster_name}.openstack.control_init
+          params:
+            linux_system_codename: xenial
           parameters:
             avinetworks:
               server:
@@ -89,9 +97,32 @@ parameters:
                       password: password
                       protocol: http
                       region_name: RegionOne
+        openstack_control_node02:
+          classes:
+          - cluster.${_param:cluster_name}.openstack.control_init
+          params:
+            linux_system_codename: xenial
+        openstack_control_node03:
+          classes:
+          - cluster.${_param:cluster_name}.openstack.control_init
+          params:
+            linux_system_codename: xenial
+
         openstack_database_node01:
           classes:
           - cluster.${_param:cluster_name}.openstack.database_init
+        openstack_database_node02:
+          classes:
+          - cluster.${_param:cluster_name}.openstack.control_init
+          params:
+            linux_system_codename: xenial
+        openstack_database_node03:
+          classes:
+          - cluster.${_param:cluster_name}.openstack.control_init
+          params:
+            linux_system_codename: xenial
+
+
         openstack_compute_node01:
           name: ${_param:openstack_compute_node01_hostname}
           domain: ${_param:cluster_domain}
