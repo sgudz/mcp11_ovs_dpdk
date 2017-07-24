@@ -99,13 +99,19 @@ parameters:
               image: ${_param:salt_control_xenial_image}
             msg03:
               image: ${_param:salt_control_xenial_image}
+            dbs01:
+              image: ${_param:salt_control_xenial_image}
+            dbs02:
+              image: ${_param:salt_control_xenial_image}
+            dbs03:
+              image: ${_param:salt_control_xenial_image}
   virt:
     nic:
       default:
-        eth1:
+        ens4:
           bridge: br_mgm
           model: virtio
-        eth0:
+        ens3:
           bridge: br_ctl
           model: virtio
   linux:
