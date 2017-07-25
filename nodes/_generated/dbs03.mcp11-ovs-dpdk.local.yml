@@ -1,0 +1,17 @@
+classes:
+- service.galera.slave.cluster
+- cluster.physical_mcp11_ovs_dpdk.openstack.database
+- cluster.physical_mcp11_ovs_dpdk.openstack.control_init
+parameters:
+  _param:
+    keepalived_vip_priority: 101
+    linux_system_codename: xenial
+    mysql_cluster_role: slave
+    salt_master_host: 172.16.52.117
+    single_address: 10.167.4.53
+  linux:
+    system:
+      name: dbs03
+      domain: mcp11-ovs-dpdk.local
+      cluster: default
+      environment: prd
