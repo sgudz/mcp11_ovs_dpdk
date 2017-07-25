@@ -18,6 +18,7 @@ classes:
 - system.glusterfs.client.volume.glance
 - system.glusterfs.client.volume.keystone
 - cluster.physical_mcp11_ovs_dpdk
+- system.haproxy.proxy.listen.openstack.nova-placement
 parameters:
   _param:
     keepalived_vip_interface: ens3
