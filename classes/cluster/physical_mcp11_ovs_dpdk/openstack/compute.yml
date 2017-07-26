@@ -45,6 +45,7 @@ parameters:
           #bond: dpdkbond1
           enabled: true
           type: dpdk_ovs_port
+          bridge: br-prv
           n_rxq: "4"
           pmd_rxq_affinity: "0:11,1:31,2:12,3:32"
 #        sriov_nic01_device_name:
